@@ -1,3 +1,16 @@
+"""
+Workday Dungeon: L&D Edition
+
+You are a Training & Documentation Specialist navigating five high-pressure
+workplace challenges. Your goal is to manage your energy (health), collect
+helpful resources, and make it through the workday.
+
+--- Enhancements Added ---
+- Multiple starting letters (future feature)
+- Status-based filtering logic inspiration
+- Workplace-themed treasures and traps
+- Reframed dungeon into a corporate L&D environment
+"""
 import random
 
 def main():
@@ -18,6 +31,7 @@ def main():
         # TODO: Ask the user for their name using input()
         # TODO: Initialize a dictionary with keys: "name", "health", and "inventory"
         # TODO: Return the dictionary
+        # NOTE: Health represents mental bandwidth / energy
 
 
     def create_treasures():
@@ -38,7 +52,8 @@ def main():
         """
         # TODO: Create a dictionary of treasure names and integer values
         # TODO: Return the dictionary
-
+        # NOTE: Using workplace-themed "treasures" like tools, support, and wins
+        
 
     def display_options(room_number):
         """
@@ -79,6 +94,8 @@ def main():
         # TODO: Write an if/else to handle treasure vs trap outcomes
         # TODO: Update player dictionary accordingly
         # TODO: Print messages describing what happened
+        # NOTE: "treasure" represents helpful tools/resources
+        # # NOTE: "trap" represents workplace stressors (meetings, unclear tasks, etc.)
 
 
     def check_status(player):
