@@ -1,49 +1,82 @@
-# Dungeon Adventure Game
+### Bunny's creatoe Notes
 
-This is a practice project where you'll build a text-based dungeon adventure game in Python. The goal is to apply your understanding of variables, operators, lists, dictionaries, loops, and conditionals.
+# Workday Dungeon: L&D Edition
 
-## Project Overview
+## Overview
 
-You will build a game where:
-- The player moves through 5 rooms in a dungeon.
-- The player can choose to search for treasure, move forward, check their health and inventory, or quit.
-- Searching for treasure has a risk: the player may find a treasure or trigger a trap that reduces their health.
-- The game ends when the player finishes all rooms, quits, or loses all their health.
-- At the end, the game displays the player’s final health, inventory of treasures, and the total treasure value.
+Workday Dungeon: L&D Edition is a Python-based interactive simulation game that models workplace challenges through a gamified lens. Players navigate a series of five "rooms" representing common organizational obstacles, making decisions that impact their energy levels, productivity, and overall performance.
 
-## Concepts Practiced
-- Variables and operators
-- Lists and dictionaries
-- Loops and conditional logic
-- The `random` module
-- Writing docstrings and organizing functions
+This project blends game design with Learning & Development concepts, demonstrating how engagement, decision-making, and resource management can be applied to workplace scenarios.
 
-## Instructions
-1. Fork and Clone this repository to your local machine.
-2. Open the project folder in VS Code or your preferred editor.
-3. Open `dungeon_adventure.py`, read the docstrongs and implement the TODOs in each function.
-4. Run the game from the terminal:
-   - macOS/Linux: `python3 dungeon_adventure.py`
-   - Windows: `python dungeon_adventure.py`
-5. Play through the game and iterate on your code as needed.
-6. When finished, save, add, commit, and push your work back to your GitHub repository.
+---
 
-## Implementation Checklist
--  `setup_player()` returns a dict with name, health, and inventory.
--  `create_treasures()` returns a dict of treasure names mapped to integer values.
--  `display_options(room_number)` prints the 4 choices.
--  `search_room(player, treasures)` randomly yields a treasure or a trap and updates the player.
--  `check_status(player)` prints health and inventory contents.
--  `end_game(player, treasures)` prints final summary including total treasure value.
--  `run_game_loop(player, treasures)` manages room flow, choices, and exit conditions.
+## Purpose
 
-## Stretch Goals (optional)
-- Create a dictionary of traps with varying damage levels.
-- Implement a scoring system that combines health and treasure value.
-- Allow players to play multiple rounds and track high scores across games.
-- Add a healing potion event with limited uses.
-- Gate certain rooms behind a key that must be found first.
+This project was developed as part of a programming assignment and expanded into a portfolio piece to showcase:
 
-## Submission
-Submit the link to your completed GitHub repository in OpenClass when finished.
+- Problem-solving and program design in Python
+- Application of gamification principles in workplace learning
+- Integration of organizational psychology concepts such as burnout, performance, and resource management
+- Clean, modular, and well-documented code
 
+---
+
+## Features
+
+### Core Gameplay
+- Five-room progression system representing a workday
+- Player health system modeling energy and burnout
+- Inventory system for collecting workplace resources
+- Randomized events for replayability
+
+### Role-Based Mechanics
+Players select a role that influences gameplay:
+
+- **Trainer**: Gains additional health from recovery events
+- **Knowledge Manager**: Higher chance of finding useful resources
+- **Project Coordinator**: Takes reduced damage from workplace challenges
+
+### Event System
+- **Resources (Treasure)**: Helpful workplace tools and successes
+- **Traps**: Common workplace challenges that reduce energy
+- **Recovery Events**: Opportunities to regain energy
+
+### Performance Evaluation
+- Final score based on resource collection and remaining health
+- Achievement system that categorizes performance:
+  - Thriving Employee
+  - Overachiever
+  - Steady Contributor
+  - Burnout
+
+### Replayability
+- Built-in replay loop allows continuous play without restarting the program
+
+---
+
+## Skills Demonstrated
+
+### Technical Skills
+- Python fundamentals (functions, loops, conditionals)
+- Data structures (lists, dictionaries)
+- Randomized logic using the `random` module
+- Input validation and control flow
+- Modular program design
+
+### Applied Concepts
+- Gamification in learning environments
+- Performance vs. well-being tradeoffs
+- Behavioral decision-making
+- Simulation design for training contexts
+
+---
+
+## How to Run
+
+1. Make sure Python is installed (Python 3 recommended)
+2. Clone this repository or download the file
+3. Navigate to the project directory
+4. Run the program:
+
+```bash
+python dungeon_adventure.py
